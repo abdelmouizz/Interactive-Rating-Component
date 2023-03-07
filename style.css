@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    background-color:hsl(216, 12%, 8%);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.first-wrapper{
+    background: linear-gradient(180deg, hsl(218, 14%, 23%),hsl(212, 21%, 14%), hsl(212, 22%, 12%));
+    margin: 10px;
+    padding: 40px;
+    border-radius: 40px;
+    height: 435px;
+    width: 450px;
+    box-shadow: 5px 5px 15px 0px hsl(180, 3%, 6%);
+    
+}
+
+.staricon{
+ background-color: hsl(211, 17%, 26%);
+ height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+h2{
+    font-size: 2rem;
+    font-family: 'Overpass', sans-serif;
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+}
+
+.first-wrapper > p{
+    font-size: 0.938rem;
+    font-family: 'Overpass', sans-serif;
+    color: hsla(0, 0%, 100%, 0.596);
+    margin: 20px 0 20px 0;
+}
+
+.feedback-container{
+    display: flex;
+    flex-direction: column;
+}
+.feedback-num{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.feedback-num > button{
+    border: none;
+    border-radius: 50%;
+    background-color:hsl(211, 17%, 26%);
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1rem;
+    color:hsla(0, 0%, 100%, 0.596);
+    padding: 15px 20px;
+    margin-top: 20px;
+    
+}
+.feedback-num > button:hover{
+    background-color: hsl(217, 12%, 63%);
+    color:hsla(0, 0%, 100%);
+    transition: 0.5s ease;
+}
+.feedback-num > button:focus{
+    background-color:hsl(25, 97%, 53%);
+    color:hsla(0, 0%, 100%);
+    transition: 0.5s ease;
+}
+
+.sub-btn{
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%);
+    background-color:hsl(25, 97%, 53%);
+    margin-top: 10px;
+}
+.sub-btn:hover{
+    background-color: hsla(0, 0%, 100%);
+    color:hsl(25, 97%, 53%);
+    transition: 0.5s ease;
+}
+
+.second-wrapper{
+    position:absolute;
+    background: linear-gradient(180deg, hsl(218, 14%, 23%),hsl(212, 21%, 14%), hsl(212, 22%, 12%));
+    margin: 10px;
+    padding: 40px;
+    border-radius: 40px;
+    height: 435px;
+    width: 450px;
+    animation-name: MyAnimation;
+    animation-duration: 1s;
+    box-shadow: 5px 5px 15px 0px hsl(180, 3%, 6%);
+    
+}
+.thankyou-img{
+    text-align: center;
+    padding: 10px;
+}
+.results{
+    text-align: center;
+    background-color: hsl(216, 10%, 28%);
+    font-size: 1rem;
+    font-family: 'Overpass', sans-serif;
+    color:hsl(25, 97%, 53%);
+    border-radius: 20px;
+    width: auto;
+}
+.second-wrapper > h2{
+    text-align: center;
+}
+
+.second-wrapper > p {
+    font-size: 0.938rem;
+    font-family: 'Overpass', sans-serif;
+    color: hsla(0, 0%, 100%, 0.596);
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+.display{
+    display:none;
+}
+
+@media screen and (max-width: 740px) {
+
+    h2{
+        font-size: 1.75rem;
+    }
+    
+    .first-wrapper > p{
+      font-size: 0.625rem;
+    }
+    .feedback-num > button{
+        font-size: 0.8rem;
+        padding: 12px 17px;
+    }
+
+    .sumb-btn{
+        font-size: 0.8rem;
+        padding: 10px;
+        margin-top: 8px;
+    }
+    
+    .results{
+        font-size: 0.875rem;
+        width: auto;
+    }
+    .second-wrapper > h2{
+        font-size: 1.75rem ;
+    }
+    .second-wrapper > p {
+        font-size: 0.852rem;
+    }
+}
+
+@keyframes MyAnimation {
+    0% {
+        transform:  rotateY(140deg);
+    }
+
+    100% {
+      transform: rotateY(0deg);
+    }
+}
+
+
+
+
+
